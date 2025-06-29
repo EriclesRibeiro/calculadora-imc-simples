@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Modelo</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Calculadora de IMC</h1>
+      <p>
+        Esta calculadora de IMC (Índice de Massa Corporal) é uma ferramenta
+        simples e eficaz para você monitorar sua saúde. Basta inserir seu peso
+        em quilogramas (kg) e sua altura em metros (m) nos campos indicados. Com
+        esses dois valores, a calculadora realizará o cálculo do seu IMC,
+        fornecendo um resultado que pode indicar se você está abaixo do peso,
+        com peso normal, com sobrepeso ou em algum grau de obesidade. Use-a como
+        um ponto de partida para entender melhor seu estado corporal!
+      </p>
+      <form id="form" action="/" method="post">
+        <label for="peso">Peso</label>
+        <input type="number" min="0" value="0" step="any" id="peso" />
+        <label for="altura">Altura</label>
+        <input type="number" min="0" value="0" step="any" id="altura" />
+        <button type="submit">Enviar</button>
+        <div id="resultado" />
+      </form>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
